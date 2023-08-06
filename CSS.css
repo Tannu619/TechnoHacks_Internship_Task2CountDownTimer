@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.OuterBody {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #f2e4ef;
+}
+.OuterBody .countDownTimer {
+    width: 80%;
+    height: 75%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background: linear-gradient(45deg, #71bfdd, #c000ff);
+    box-shadow: 0rem 0.1rem 0.3rem 0.1rem #90cbe1;
+}
+.OuterBody .countDownTimer .Title {
+    display: flex;
+    padding-left: 0rem;
+    margin-bottom: -1rem;
+    align-items: center;
+    width: 60%;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    transform: translateX(-3rem);
+}
+.OuterBody .countDownTimer .Title p {
+    margin-left: 10%;
+}
+
+.OuterBody .countDownTimer .Inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 21%;
+    font-size: 5rem;
+    color: white;
+}
+
+.OuterBody .countDownTimer .Inputs .Time {
+    border: none;
+    font-size: 4rem;
+    width: 85%;
+    background: transparent;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.OuterBody .countDownTimer .Inputs .Time::-webkit-calendar-picker-indicator {
+    background: url("icons8-add-time-40.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.OuterBody .countDownTimer .buttons{
+    width: 100%;
+    height: 35%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.OuterBody .countDownTimer .buttons .TopBtns,
+.OuterBody .countDownTimer .buttons .BottomBtns {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.OuterBody .countDownTimer .buttons .TopBtns .Btn {
+    width: 31%;
+    height: 45%;
+    background: transparent;
+    border-radius: 2rem;
+    /* border: 1px solid red; */
+    text-decoration: none;
+}
+.OuterBody .countDownTimer .buttons .TopBtns #RESUME {
+    width: 20%;
+    height: 45%;
+    border: 0.1rem solid white;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0rem 0.6rem 0rem white;
+    cursor: pointer;
+    display: none;
+}
+
+.OuterBody .countDownTimer .buttons .TopBtns #RESTART {
+    width: 20%;
+    height: 45%;
+    border: 0.1rem solid white;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0rem 0.6rem 0rem white;
+    cursor: pointer;
+    display: none;
+}
+
+.OuterBody .countDownTimer .buttons .TopBtns #RESET{
+    width: 100%;
+    height: 100%;
+    border: 0.1rem solid white;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0rem 0.6rem 0rem white;
+    cursor: pointer;
+    display: none;
+}
+
+.OuterBody .countDownTimer .buttons .BottomBtns #STOP {
+    width: 25%;
+    height: 50%;
+    border: 0.1rem solid white;
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0rem 0.6rem 0rem white;
+    cursor: pointer;
+    display: block;
+}
